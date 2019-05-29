@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title> To-do list </title>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+
+<body onload = "init();">
+    <section class="page">
+    <h2> my work to-dos</h2>
+    <div class="instr">
+    <p class="first"> Enter text into the input field to add items to your list</p>
+    <p class="second"> Click the item to mark it as complete </p>
+    <p class="third"> Click the "X" to remove the item from your list</p>
+    <p class="fourth"> Created by sage x</p>
+    </div>
+
+    <input type="text" placeholder="Add new item..." maxlength="27" id = "userinput" onkeypress="addListAfterKeyPress(event);">
+    <button class="enterButton" onclick="addListAfterClick();">Add</button>
+    </section>
+
+    <!-- Empty list -->
+    <ul id="listItem">
+    
+
+    </ul>
+</body>
+</html>
